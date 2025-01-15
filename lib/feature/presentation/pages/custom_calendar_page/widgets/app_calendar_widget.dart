@@ -45,7 +45,7 @@ class AppCalendar extends StatelessWidget {
           child: Container(
             decoration: BoxDecoration(
               border: index == 22
-                  ? Border.all(color: AppColors.cBlue, width: 1.sp)
+                  ? Border.all(color: AppColors.cBlue, width: 3.sp)
                   : null,
             ),
             child: Column(
@@ -60,9 +60,9 @@ class AppCalendar extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                           color: date.month == currentMonth.month
                               ? ColorHelper.intToColor(index) ==
-                              AppColors.cWhite
-                              ? AppColors.c212121
-                              : AppColors.cWhite
+                                      AppColors.cWhite
+                                  ? AppColors.c212121
+                                  : AppColors.cWhite
                               : AppColors.cBDBDBD),
                     ),
                     Text(
@@ -71,9 +71,9 @@ class AppCalendar extends StatelessWidget {
                           fontSize: 12,
                           fontWeight: FontWeight.w400,
                           color:
-                          ColorHelper.intToColor(index) == AppColors.cWhite
-                              ? AppColors.c616161
-                              : AppColors.cWhite),
+                              ColorHelper.intToColor(index) == AppColors.cWhite
+                                  ? AppColors.c616161
+                                  : AppColors.cWhite),
                     )
                   ],
                 ),
@@ -104,10 +104,8 @@ class AppCalendar extends StatelessWidget {
     );
 
     return List.generate(
-      lastDayOfGrid
-          .difference(firstDayOfGrid)
-          .inDays + 1,
-          (index) => firstDayOfGrid.add(Duration(days: index)),
+      lastDayOfGrid.difference(firstDayOfGrid).inDays + 1,
+      (index) => firstDayOfGrid.add(Duration(days: index)),
     );
   }
 
