@@ -1,9 +1,4 @@
-import 'package:calendar_viewer/calendar_viewer.dart';
 import 'package:custom_calendar/core/constants/app_colors_cons.dart';
-import 'package:custom_calendar/core/constants/app_locale_keys_cons.dart';
-import 'package:custom_calendar/core/constants/app_svg_cons.dart';
-import 'package:custom_calendar/core/helpers/color_helper.dart';
-import 'package:custom_calendar/core/helpers/date_helpers.dart';
 import 'package:custom_calendar/feature/presentation/pages/custom_calendar_page/widgets/app_bar_widget.dart';
 import 'package:custom_calendar/feature/presentation/pages/custom_calendar_page/widgets/app_calendar_widget.dart';
 import 'package:custom_calendar/feature/presentation/pages/custom_calendar_page/widgets/app_chance_of_widget.dart';
